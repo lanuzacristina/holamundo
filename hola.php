@@ -1,5 +1,5 @@
 <?php
 $nom = "Cristina";
-$llinage = "";
+$llinage = "Lanuza";
 $nom_complet = $nom." ".$llinage;
 echo("Hola, soc $nom_complet.");
