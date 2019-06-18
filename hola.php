@@ -5,19 +5,22 @@ $edat = 23;
 $nom_complet = $nom." ".$llinage;
 
 echo("Hola, soc $nom_complet i tinc $edat anys.");
-
-if ($edat >= 18) [
+echo("<br>");
+if ($edat >= 18) {
     echo("¡Puc comprar alcohol en la discoteca!");
-] else [
+} else {
     echo("Si dema alcohol en la discoteca no me la donen i me muic de ganes i de vergonyeta.");
-]
-if ($edat == true) [
+}
+echo("<br>");
+if ($edat == true) {
     echo("Pot ser que tinga eixa edat, sí.");
-] else [
+} else {
     echo("Eixa edat no existix, primo.");
-]
-if ($edat >= 90) [
+}
+echo("<br>");
+if ($edat >= 90) {
     echo("Va quedant-me poquet per a la mort.");
-] else [
+} else {
     echo("¡Olé el bro lo joveneta que soc!");
-]
+}
+    
