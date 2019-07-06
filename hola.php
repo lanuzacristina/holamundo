@@ -1,13 +1,22 @@
 <?php
+$saltodelinea = PHP_EOL;
 $nom = "Cristina";
 $llinage = "Lanuza";
 $nom_complet = $nom." ".$llinage;
-$saltodelinea = PHP_EOL;
-$edat = readline("Introduix la teua edat: ");
 
-while ($edat ==false || is_float($edat) || $edat > 105 || $edat < 0){
-    $edat = readline("¡Fica be l'edat, che!: ");
-}
+$msg_edat = "¿Molts anys tens?";
+
+do {    
+
+    $edat = (int) readline($msg_edat);
+
+    $edat_error = $edat == false || $edat > 105 || $edat < 0; 
+
+    if($edat_error) {
+        $msg_edat = "¡Anem a vore! Fica be els teus anys: ";
+    }
+
+} while ($edat_error);
 
 echo("Hola, soy $nom_complet i tinc $edat anys.$saltodelinea");
 
